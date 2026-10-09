@@ -1,26 +1,21 @@
-# wizard_Battle
-Wizard battle either over you're local internet connection or offline,
-you gain power by completing puzzles in a short time under pressure!!
+# Wizard Battle
 
-Winning rules:
-Win by having greator power than youre oponent, tie by having a diffrence of less than 10. 
+A C# console game in progress featuring Dumbledore and Riddle.
 
-Have fun!
+The introduction displays a countdown. Press **Escape** during the countdown to skip to Dumbledore's turn. Puzzle gameplay is still in development; both power values currently start at zero.
 
-## Run the project
+## Run
 
-Install the .NET 10 SDK, then run this command from the repository folder:
+Install the .NET 10 SDK, then run this command from the project folder:
 
 ```bash
 dotnet run --project Wizards.csproj
 ```
 
-Use an interactive terminal, such as VS Code's integrated terminal. Press **Escape** during the introduction countdown to skip to Dumbledore's turn.
+Use a terminal that accepts keyboard input, such as VS Code's integrated terminal.
 
-## Project files
+## Files
 
-- `wizards_hackclub.cs`: main program and winner comparisons.
-- `Helpers/Introduction.cs`: welcome message, countdown, and Escape handling.
-- `Wizards.csproj`: compiles the main program and helper files together.
-
-Puzzle gameplay and multiplayer are still in development. Both power values currently start at zero.
+- `wizards_hackclub.cs`: the main program and winner comparisons.
+- `Helpers/Introduction.cs`: the introduction, countdown, and Escape handling.
+- `Wizards.csproj`: compiles the program and helper files together.

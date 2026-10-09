@@ -8,10 +8,15 @@ namespace wizards
     {
         public static void PlayIntroduction()
         {
-            Console.WriteLine("Welcome to the wizard duel! To determine your power, you will"
-             + " need to solve a series of puzzles. Each correct answer will increase your power. Let's begin!"
-             + " Press esc to skip");
+            Console.WriteLine("Welcome to the wizard duel!");
+            Console.WriteLine("To determine your power, you will"
+             + " need to solve a series of puzzles.");
+            Console.WriteLine("Each correct answer will increase your power. Let's begin!"
+            + " (Press esc to skip the introduction.)");
 
+            //describe the puzzle to the readers
+            if (WaitOrSkip(6000)) return;
+            Console.WriteLine("You will be given a string of numbers. rearange the numbers from lowest to highest in .5 seconds to gain power");
 
             if (WaitOrSkip(6000)) return;
             Console.WriteLine("3");

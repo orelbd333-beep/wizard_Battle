@@ -13,22 +13,27 @@ using System.Threading.Tasks;
 namespace wizards
 
 {
-    class Program
+    class Wizards
     {
         static void Main(string[] args)
         {
-
+           
 
             //get thier power through solving puzzles
-
+            
             //tell the user that theier going to play puzzles to get power
             Introduction.PlayIntroduction();
 
             //get dumbbledores power
             Console.WriteLine("Dumbledores turn:");
+            //get a string of random numbers
+            Random rand = new Random();
+            string randomPuzzle  = rand.Next(1000,10000).ToString();
+            //Console.WriteLine("dumbledore's number: " + randomPuzzle); IT WORKS!!!
+
+
             int DumbledorePower = 0;
             int RiddlesPower = 0;
-
 
             if (DumbledorePower * 2 == RiddlesPower)
             {
